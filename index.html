@@ -152,28 +152,440 @@
         </section>
 
         <section id="projetos" class="content-section hidden">
-            <h2 class="text-3xl font-bold border-b-2 border-blue-600 pb-2">Nossos Projetos</h2>
-            <p class="mt-4 text-lg">Conheça nossas iniciativas esportivas e de lazer em todo o Brasil.</p>
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-blue-600 font-bold uppercase tracking-widest text-sm">Portfólio de Impacto</span>
+                    <h2 class="text-4xl font-black text-gray-800 mt-2">Nossas Iniciativas</h2>
+                    <div class="h-1.5 w-20 bg-blue-600 mt-4 rounded-full"></div>
+                </div>
+                <p class="text-gray-600 max-w-md md:text-right">
+                    Desenvolvemos programas que unem técnica esportiva, educação e lazer para diversas faixas etárias.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-blue-700 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-futbol text-6xl text-white/20 absolute -right-4 -bottom-4 rotate-12"></i>
+                        <i class="fas fa-users text-5xl text-white group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full">Inclusão Social</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Escolinhas ANIEL</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Aulas gratuitas de futsal, vôlei e basquete para crianças e jovens em áreas de vulnerabilidade.
+                        </p>
+                        <div class="flex items-center justify-between border-t pt-4">
+                            <span class="text-xs text-gray-400"><i class="fas fa-map-marker-alt mr-1"></i> Nacional</span>
+                            <a href="#" class="text-blue-600 font-bold text-sm hover:underline">Detalhes <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-orange-500 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-sun text-6xl text-white/20 absolute -right-4 -bottom-4 rotate-12"></i>
+                        <i class="fas fa-table-tennis text-5xl text-white group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-bold rounded-full">Lazer</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Movimenta Praça</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Atividades de lazer e ginástica orientada para a terceira idade em parques e praças públicas.
+                        </p>
+                        <div class="flex items-center justify-between border-t pt-4">
+                            <span class="text-xs text-gray-400"><i class="fas fa-map-marker-alt mr-1"></i> SP e RJ</span>
+                            <a href="#" class="text-blue-600 font-bold text-sm hover:underline">Detalhes <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-indigo-800 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-trophy text-6xl text-white/20 absolute -right-4 -bottom-4 rotate-12"></i>
+                        <i class="fas fa-medal text-5xl text-white group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-xs font-bold rounded-full">Rendimento</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Rumo ao Pódio</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Suporte técnico e nutricional para atletas federados que buscam competições nacionais.
+                        </p>
+                        <div class="flex items-center justify-between border-t pt-4">
+                            <span class="text-xs text-gray-400"><i class="fas fa-map-marker-alt mr-1"></i> Centros Técnicos</span>
+                            <a href="#" class="text-blue-600 font-bold text-sm hover:underline">Detalhes <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-16 bg-gray-100 rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 border border-gray-200">
+                <div>
+                    <h4 class="text-2xl font-bold text-gray-800">Tem uma iniciativa em mente?</h4>
+                    <p class="text-gray-600">A ANIEL apoia novos projetos esportivos através de parcerias públicas e privadas.</p>
+                </div>
+                <button class="nav-link bg-blue-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-700 transition" data-target="contatos">
+                    Seja um Parceiro
+                </button>
+            </div>
         </section>
 
         <section id="noticias" class="content-section hidden">
-            <h2 class="text-3xl font-bold border-b-2 border-blue-600 pb-2">Notícias</h2>
-            <p class="mt-4 text-lg">Fique por dentro das últimas atualizações da associação.</p>
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-4">
+                <div>
+                    <h2 class="text-4xl font-black text-gray-800">Acontece na ANIEL</h2>
+                    <p class="text-blue-600 font-medium mt-1 uppercase tracking-widest text-sm">Últimas Atualizações e Coberturas</p>
+                </div>
+                <div class="h-1 w-32 bg-blue-600 rounded-full hidden md:block"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-3xl bg-gray-200 aspect-video mb-6 shadow-lg">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 text-white">
+                            <span class="bg-blue-600 text-xs font-bold px-3 py-1 rounded-full w-fit mb-4">DESTAQUE</span>
+                            <h3 class="text-2xl md:text-4xl font-bold leading-tight group-hover:underline transition">
+                                ANIEL firma parceria nacional para ampliação de centros esportivos em 2026
+                            </h3>
+                            <div class="flex items-center gap-4 mt-4 text-sm text-gray-300">
+                                <span><i class="far fa-calendar-alt mr-2"></i>23 de Março, 2026</span>
+                                <span><i class="far fa-user mr-2"></i>Comunicação ANIEL</span>
+                            </div>
+                        </div>
+                        <div class="w-full h-full flex items-center justify-center bg-blue-800">
+                            <i class="fas fa-newspaper text-9xl text-white/10"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        A nova iniciativa visa reformar mais de 50 quadras poliesportivas em comunidades de baixa renda até o final do segundo semestre. O projeto contará com o apoio de empresas privadas e governos locais...
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h4 class="text-xl font-bold text-gray-800 flex items-center">
+                        <i class="fas fa-list-ul mr-2 text-blue-600"></i> Mais Notícias
+                    </h4>
+                    
+                    <article class="flex gap-4 group cursor-pointer border-b border-gray-100 pb-4">
+                        <div class="w-24 h-24 bg-blue-100 rounded-xl flex-shrink-0 flex items-center justify-center">
+                            <i class="fas fa-trophy text-blue-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-blue-600 uppercase">Eventos</span>
+                            <h5 class="font-bold text-gray-800 leading-snug group-hover:text-blue-600 transition">
+                                Abertura das inscrições para o Torneio Nacional de Lazer
+                            </h5>
+                            <span class="text-xs text-gray-400">Há 2 horas</span>
+                        </div>
+                    </article>
+
+                    <article class="flex gap-4 group cursor-pointer border-b border-gray-100 pb-4">
+                        <div class="w-24 h-24 bg-blue-100 rounded-xl flex-shrink-0 flex items-center justify-center">
+                            <i class="fas fa-chart-line text-blue-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-blue-600 uppercase">Institucional</span>
+                            <h5 class="font-bold text-gray-800 leading-snug group-hover:text-blue-600 transition">
+                                Relatório anual de impacto social aponta crescimento de 30%
+                            </h5>
+                            <span class="text-xs text-gray-400">Ontem</span>
+                        </div>
+                    </article>
+
+                    <article class="flex gap-4 group cursor-pointer">
+                        <div class="w-24 h-24 bg-blue-100 rounded-xl flex-shrink-0 flex items-center justify-center">
+                            <i class="fas fa-handshake text-blue-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-blue-600 uppercase">Parcerias</span>
+                            <h5 class="font-bold text-gray-800 leading-snug group-hover:text-blue-600 transition">
+                                Novos voluntários são capacitados para projetos de Futsal
+                            </h5>
+                            <span class="text-xs text-gray-400">18 de Março</span>
+                        </div>
+                    </article>
+
+                    <button class="w-full py-3 bg-gray-100 text-gray-600 font-bold rounded-xl hover:bg-gray-200 transition mt-4">
+                        Ver Todo o Arquivo
+                    </button>
+                </div>
+            </div>
         </section>
 
         <section id="trabalhe" class="content-section hidden">
-            <h2 class="text-3xl font-bold border-b-2 border-blue-600 pb-2">Trabalhe Conosco</h2>
-            <p class="mt-4 text-lg">Venha fazer parte do nosso time de especialistas.</p>
+            <div class="max-w-3xl mb-12">
+                <h2 class="text-4xl font-black text-gray-800">Faça parte do Time ANIEL</h2>
+                <div class="h-1.5 w-20 bg-blue-600 my-4 rounded-full"></div>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Buscamos profissionais apaixonados por transformar a realidade social através do esporte. Se você acredita no poder da educação e do lazer, seu lugar é aqui.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+                <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100 text-center">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">Impacto Social</h4>
+                    <p class="text-sm text-gray-600">Trabalhe em projetos que mudam vidas e comunidades reais em todo o país.</p>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100 text-center">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">Crescimento</h4>
+                    <p class="text-sm text-gray-600">Programas internos de capacitação técnica e desenvolvimento de liderança.</p>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100 text-center">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">Flexibilidade</h4>
+                    <p class="text-sm text-gray-600">Modelos de trabalho híbridos e foco em entregas e qualidade de vida.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-briefcase mr-3 text-blue-600"></i> Vagas em Aberto
+                </h3>
+
+                <div class="group bg-white p-6 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">Coordenador de Projetos Esportivos</h4>
+                        <div class="flex flex-wrap gap-4 mt-2 text-sm text-gray-500">
+                            <span><i class="fas fa-map-marker-alt mr-1"></i> São Paulo, SP</span>
+                            <span><i class="fas fa-briefcase mr-1"></i> Full-time</span>
+                            <span><i class="fas fa-laptop mr-1"></i> Híbrido</span>
+                        </div>
+                    </div>
+                    <button class="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-bold text-sm hover:bg-blue-700 transition">
+                        Candidatar-se
+                    </button>
+                </div>
+
+                <div class="group bg-white p-6 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">Assistente Administrativo</h4>
+                        <div class="flex flex-wrap gap-4 mt-2 text-sm text-gray-500">
+                            <span><i class="fas fa-map-marker-alt mr-1"></i> Rio de Janeiro, RJ</span>
+                            <span><i class="fas fa-briefcase mr-1"></i> Presencial</span>
+                        </div>
+                    </div>
+                    <button class="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-bold text-sm hover:bg-blue-700 transition">
+                        Candidatar-se
+                    </button>
+                </div>
+
+                <div class="group bg-white p-6 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">Educador Físico Voluntário</h4>
+                        <div class="flex flex-wrap gap-4 mt-2 text-sm text-gray-500">
+                            <span><i class="fas fa-map-marker-alt mr-1"></i> Nacional</span>
+                            <span><i class="fas fa-heart mr-1"></i> Voluntariado</span>
+                        </div>
+                    </div>
+                    <button class="bg-gray-100 text-gray-600 px-6 py-2.5 rounded-xl font-bold text-sm hover:bg-gray-200 transition border border-gray-200">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center p-8 bg-gray-50 rounded-3xl border-2 border-dashed border-gray-200">
+                <p class="text-gray-600 mb-4 font-medium">Não encontrou a vaga ideal? Envie seu currículo para nosso banco de talentos.</p>
+                <a href="mailto:talentos@aniel.org.br" class="text-blue-600 font-bold hover:underline">talentos@aniel.org.br</a>
+            </div>
         </section>
 
         <section id="transparencia" class="content-section hidden">
-            <h2 class="text-3xl font-bold border-b-2 border-blue-600 pb-2">Portal da Transparência</h2>
-            <p class="mt-4 text-lg">Acesso aberto aos relatórios e investimentos da ANIEL.</p>
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div class="max-w-2xl">
+                    <span class="text-blue-600 font-bold uppercase tracking-widest text-sm">Portal da Transparência</span>
+                    <h2 class="text-4xl font-black text-gray-800 mt-2">Compromisso com a Ética</h2>
+                    <div class="h-1.5 w-20 bg-blue-600 mt-4 rounded-full"></div>
+                    <p class="mt-6 text-gray-600 leading-relaxed">
+                        A ANIEL preza pela prestação de contas clara e objetiva. Aqui você encontra todos os documentos que regem nossa instituição e os resultados sociais de nossos investimentos.
+                    </p>
+                </div>
+                
+                <div class="bg-green-50 border border-green-200 p-4 rounded-2xl flex items-center gap-4">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white text-xl">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-green-700 font-bold uppercase tracking-tighter">Dados Atualizados</p>
+                        <p class="text-sm font-semibold text-green-800">Exercício 2025/2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-blue-200 transition-all group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-2xl">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <span class="text-xs font-bold text-gray-400">PDF (4.2 MB)</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Relatório de Impacto 2025</h4>
+                    <p class="text-gray-500 text-sm mb-6">Detalhamento de todos os projetos realizados e vidas impactadas no último ano.</p>
+                    <button class="w-full flex items-center justify-center gap-2 py-3 bg-gray-50 text-blue-700 font-bold rounded-xl hover:bg-blue-600 hover:text-white transition-colors border border-blue-50">
+                        <i class="fas fa-download"></i> Baixar Arquivo
+                    </button>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-blue-200 transition-all group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-2xl">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <span class="text-xs font-bold text-gray-400">PDF (2.1 MB)</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Balanço Financeiro Q4</h4>
+                    <p class="text-gray-500 text-sm mb-6">Demonstrações financeiras auditadas do quarto trimestre de 2025.</p>
+                    <button class="w-full flex items-center justify-center gap-2 py-3 bg-gray-50 text-blue-700 font-bold rounded-xl hover:bg-blue-600 hover:text-white transition-colors border border-blue-50">
+                        <i class="fas fa-download"></i> Baixar Arquivo
+                    </button>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-blue-200 transition-all group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-2xl">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <span class="text-xs font-bold text-gray-400">PDF (1.5 MB)</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Estatuto Social ANIEL</h4>
+                    <p class="text-gray-500 text-sm mb-6">Documento de fundação com as diretrizes legais e objetivos da associação.</p>
+                    <button class="w-full flex items-center justify-center gap-2 py-3 bg-gray-50 text-blue-700 font-bold rounded-xl hover:bg-blue-600 hover:text-white transition-colors border border-blue-50">
+                        <i class="fas fa-download"></i> Baixar Arquivo
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="mt-12 bg-blue-900 rounded-3xl p-8 text-white flex flex-col md:flex-row items-center gap-8">
+                <div class="text-4xl">
+                    <i class="fas fa-info-circle opacity-50"></i>
+                </div>
+                <div>
+                    <h5 class="text-xl font-bold mb-2 text-blue-200">Dúvidas sobre a gestão?</h5>
+                    <p class="text-blue-100">Nosso conselho fiscal está à disposição para esclarecimentos. Você também pode solicitar dados específicos através do nosso canal de ouvidoria.</p>
+                </div>
+                <button class="nav-link whitespace-nowrap px-8 py-3 bg-blue-400 text-blue-900 font-bold rounded-xl hover:bg-blue-300 transition" data-target="contatos">
+                    Ir para Ouvidoria
+                </button>
+            </div>
         </section>
 
         <section id="contatos" class="content-section hidden">
-            <h2 class="text-3xl font-bold border-b-2 border-blue-600 pb-2">Contatos</h2>
-            <p class="mt-4 text-lg">Entre em contato conosco através dos nossos canais oficiais.</p>
+            <div class="mb-12">
+                <h2 class="text-4xl font-black text-gray-800">Fale com a ANIEL</h2>
+                <div class="h-1.5 w-20 bg-blue-600 my-4 rounded-full"></div>
+                <p class="text-gray-600 max-w-2xl">
+                    Dúvidas, sugestões ou propostas de parceria? Nossa equipe está pronta para te atender. Escolha o melhor canal ou envie uma mensagem direta.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                        <h3 class="text-2xl font-bold text-blue-700 mb-6 italic">Canais Oficiais</h3>
+                        
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-800">Sede Nacional</p>
+                                    <p class="text-gray-600 text-sm">Av. Paulista, 1000 - Bela Vista, São Paulo - SP</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-600 flex-shrink-0">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-800">WhatsApp / Telefone</p>
+                                    <p class="text-gray-600 text-sm">(11) 99999-9999</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center text-red-600 flex-shrink-0">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-800">E-mail</p>
+                                    <p class="text-gray-600 text-sm">contato@aniel.org.br</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <hr class="my-8 border-gray-100">
+
+                        <h4 class="font-bold text-gray-800 mb-4 uppercase tracking-widest text-xs">Siga-nos nas Redes</h4>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-black hover:text-white transition-all"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-800 hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white transition-all"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="h-48 bg-gray-200 rounded-3xl overflow-hidden relative flex items-center justify-center border-2 border-white shadow-inner">
+                        <i class="fas fa-map-marked-alt text-6xl text-gray-400 opacity-30"></i>
+                        <p class="absolute bottom-4 bg-white/80 px-4 py-1 rounded-full text-xs font-bold text-gray-600">Visualizar no Google Maps</p>
+                    </div>
+                </div>
+
+                <div class="bg-blue-900 p-8 md:p-10 rounded-3xl shadow-2xl text-white">
+                    <h3 class="text-2xl font-bold mb-6">Envie uma Mensagem</h3>
+                    
+                    <form class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold mb-2 uppercase opacity-70">Seu Nome</label>
+                                <input type="text" placeholder="Ex: João Silva" class="w-full bg-blue-800 border-none rounded-xl p-3 focus:ring-2 focus:ring-blue-400 text-white placeholder-blue-300 transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold mb-2 uppercase opacity-70">E-mail</label>
+                                <input type="email" placeholder="Ex: joao@email.com" class="w-full bg-blue-800 border-none rounded-xl p-3 focus:ring-2 focus:ring-blue-400 text-white placeholder-blue-300 transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold mb-2 uppercase opacity-70">Assunto</label>
+                            <select class="w-full bg-blue-800 border-none rounded-xl p-3 focus:ring-2 focus:ring-blue-400 text-white transition appearance-none">
+                                <option>Dúvidas Gerais</option>
+                                <option>Parcerias</option>
+                                <option>Imprensa</option>
+                                <option>Ouvidoria</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold mb-2 uppercase opacity-70">Sua Mensagem</label>
+                            <textarea rows="4" placeholder="Como podemos ajudar?" class="w-full bg-blue-800 border-none rounded-xl p-3 focus:ring-2 focus:ring-blue-400 text-white placeholder-blue-300 transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-blue-400 text-blue-900 font-black rounded-xl hover:bg-blue-300 transition-all shadow-lg uppercase tracking-wider">
+                            Enviar Agora
+                        </button>
+                    </form>
+                </div>
+
+            </div>
         </section>
 
     </main>
