@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIEL - Associação Nacional de Iniciativas Esportivas e de Lazer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-bold text-blue-700 nav-link" data-target="inicio">ANIEL</a>
+            </div>
+
+            <ul class="hidden md:flex space-x-6 font-medium">
+                <li><a href="#" class="nav-link hover:text-blue-600 transition" data-target="sobre">Sobre</a></li>
+                <li><a href="#" class="nav-link hover:text-blue-600 transition" data-target="projetos">Projetos</a></li>
+                <li><a href="#" class="nav-link hover:text-blue-600 transition" data-target="noticias">Notícias</a></li>
+                <li><a href="#" class="nav-link hover:text-blue-600 transition" data-target="trabalhe">Trabalhe Conosco</a></li>
+                <li><a href="#" class="nav-link hover:text-blue-600 transition" data-target="transparencia">Transparência</a></li>
+                <li><a href="#" class="nav-link hover:text-blue-600 transition" data-target="contatos">Contatos</a></li>
+            </ul>
+
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-green-500 hover:scale-110 transition text-xl"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="text-pink-600 hover:scale-110 transition text-xl"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-black hover:scale-110 transition text-xl"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="text-black hover:scale-110 transition text-xl"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="text-red-600 hover:scale-110 transition text-xl"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="content-area" class="container mx-auto px-4 py-12">
+        
+        <section id="inicio" class="content-section">
+            
+            <!-- <div class="relative overflow-hidden rounded-3xl bg-blue-900 text-white p-8 md:p-20 shadow-2xl">
+                <div class="absolute top-0 right-0 -mt-20 -mr-20 w-64 h-64 bg-blue-700 rounded-full opacity-20 blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-blue-500 rounded-full opacity-10 blur-3xl"></div>
+
+                <div class="relative z-10 flex flex-col md:flex-row items-center gap-10">
+                    <div class="md:w-3/5 text-center md:text-left">
+                        <span class="inline-block px-4 py-1 rounded-full bg-blue-500/30 text-blue-200 text-sm font-semibold mb-6 uppercase tracking-widest">
+                            Iniciativas Nacionais
+                        </span>
+                        <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">
+                            O Esporte como <br> <span class="text-blue-400">Motor de Mudança.</span>
+                        </h1>
+                        <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-xl">
+                            A ANIEL conecta sonhos ao esporte e ao lazer, promovendo inclusão e bem-estar em cada canto do Brasil.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                            <button class="nav-link px-8 py-4 bg-white text-blue-900 font-bold rounded-xl hover:bg-blue-100 transition shadow-lg" data-target="projetos">
+                                Ver Projetos
+                            </button>
+                            <button class="nav-link px-8 py-4 border-2 border-white/30 text-white font-bold rounded-xl hover:bg-white/10 transition" data-target="sobre">
+                                Saiba Mais
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="md:w-2/5 flex justify-center">
+                        <div class="relative">
+                            <div class="w-48 h-48 md:w-64 md:h-64 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-2xl animate-pulse">
+                                <i class="fas fa-running text-7xl md:text-8xl text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div id="carousel-container" class="owl-carousel owl-theme mb-12"></div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                <div class="bg-white p-6 rounded-2xl shadow-md text-center border border-gray-100">
+                    <div class="text-3xl font-black text-blue-700">+15k</div>
+                    <div class="text-gray-500 text-sm uppercase font-bold tracking-tighter">Atletas Impactados</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md text-center border border-gray-100">
+                    <div class="text-3xl font-black text-blue-700">26</div>
+                    <div class="text-gray-500 text-sm uppercase font-bold tracking-tighter">Estados Atendidos</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md text-center border border-gray-100">
+                    <div class="text-3xl font-black text-blue-700">+100</div>
+                    <div class="text-gray-500 text-sm uppercase font-bold tracking-tighter">Projetos Ativos</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md text-center border border-gray-100">
+                    <div class="text-3xl font-black text-blue-700">12</div>
+                    <div class="text-gray-500 text-sm uppercase font-bold tracking-tighter">Modalidades</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="content-section hidden">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-blue-800">Sobre a ANIEL</h2>
+                <div class="h-1 w-24 bg-blue-600 mx-auto mt-2"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto italic">
+                    Transformando vidas através do esporte e da integração social desde a nossa fundação.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Nossa História</h3>
+                    <p class="text-gray-700 leading-relaxed text-justify">
+                        A **Associação Nacional de Iniciativas Esportivas e de Lazer (ANIEL)** nasceu da convicção de que o esporte é a ferramenta mais poderosa para a inclusão social e o desenvolvimento humano. Atuamos em todo o território nacional, conectando comunidades a oportunidades de prática esportiva qualificada.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed text-justify">
+                        Nosso foco está em democratizar o acesso ao lazer e às competições, apoiando desde atletas iniciantes até projetos de alto rendimento, sempre com foco na ética, na transparência e no impacto social positivo.
+                    </p>
+                </div>
+                
+                <div class="bg-blue-100 rounded-2xl p-8 flex items-center justify-center border-2 border-dashed border-blue-300">
+                    <div class="text-center">
+                        <i class="fas fa-medal text-6xl text-blue-600 mb-4"></i>
+                        <p class="text-blue-800 font-semibold text-lg uppercase tracking-wider">Compromisso com o Esporte</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-600 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fas fa-bullseye"></i></div>
+                    <h4 class="text-xl font-bold mb-2">Missão</h4>
+                    <p class="text-gray-600 text-sm">Fomentar iniciativas que promovam o bem-estar e a cidadania através do esporte e do lazer acessível a todos.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-600 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fas fa-eye"></i></div>
+                    <h4 class="text-xl font-bold mb-2">Visão</h4>
+                    <p class="text-gray-600 text-sm">Ser a principal referência nacional em gestão de projetos esportivos de impacto social até o final da década.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-600 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h4 class="text-xl font-bold mb-2">Valores</h4>
+                    <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Transparência Radical</li>
+                        <li>• Inclusão Social</li>
+                        <li>• Excelência Técnica</li>
+                        <li>• Espírito de Equipe</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="content-section hidden">
+            <h2 class="text-3xl font-bold border-b-2 border-blue-600 pb-2">Nossos Projetos</h2>
+            <p class="mt-4 text-lg">Conheça nossas iniciativas esportivas e de lazer em todo o Brasil.</p>
+        </section>
+
+        <section id="noticias" class="content-section hidden">
+            <h2 class="text-3xl font-bold border-b-2 border-blue-600 pb-2">Notícias</h2>
+            <p class="mt-4 text-lg">Fique por dentro das últimas atualizações da associação.</p>
+        </section>
+
+        <section id="trabalhe" class="content-section hidden">
+            <h2 class="text-3xl font-bold border-b-2 border-blue-600 pb-2">Trabalhe Conosco</h2>
+            <p class="mt-4 text-lg">Venha fazer parte do nosso time de especialistas.</p>
+        </section>
+
+        <section id="transparencia" class="content-section hidden">
+            <h2 class="text-3xl font-bold border-b-2 border-blue-600 pb-2">Portal da Transparência</h2>
+            <p class="mt-4 text-lg">Acesso aberto aos relatórios e investimentos da ANIEL.</p>
+        </section>
+
+        <section id="contatos" class="content-section hidden">
+            <h2 class="text-3xl font-bold border-b-2 border-blue-600 pb-2">Contatos</h2>
+            <p class="mt-4 text-lg">Entre em contato conosco através dos nossos canais oficiais.</p>
+        </section>
+
+    </main>
+
+                    <!-- Handlebars -->
+
+    <script id="carousel-template" type="text/x-handlebars-template">
+        {{#each slides}}
+        <div class="item relative overflow-hidden rounded-3xl bg-blue-900 text-white p-8 md:p-20 shadow-2xl min-h-[450px] flex items-center">
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-10 w-full">
+                <div class="md:w-3/5 text-center md:text-left">
+                    <span class="inline-block px-4 py-1 rounded-full bg-blue-500/30 text-blue-200 text-sm font-semibold mb-6 uppercase tracking-widest">
+                        {{tag}}
+                    </span>
+                    <h2 class="text-4xl md:text-6xl font-black leading-tight mb-6">
+                        {{{titulo}}}
+                    </h2>
+                    <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-xl">
+                        {{descricao}}
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <button class="nav-link px-8 py-4 bg-white text-blue-900 font-bold rounded-xl hover:bg-blue-100 transition shadow-lg" data-target="{{target}}">
+                            {{botaoTexto}}
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-2/5 flex justify-center">
+                    <div class="w-48 h-48 md:w-64 md:h-64 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-2xl">
+                        <i class="fas {{icone}} text-7xl md:text-8xl text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="./public/js/script.js"></script>
+</body>
+</html>
