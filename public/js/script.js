@@ -69,6 +69,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// --- LÓGICA DO MENU MOBILE ---
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenuIcon = mobileMenuBtn.querySelector('i');
+
+// Função para abrir/fechar o menu
+function toggleMobileMenu() {
+    mobileMenu.classList.toggle('hidden'); // Necessário para o Tailwind não ocultar o elemento
+    
+    // Pequeno delay para a animação do CSS funcionar
+    setTimeout(() => {
+        mobileMenu.classList.toggle('open');
+    }, 10);
+
+    // Troca o ícone de barras (☰) para fechar (✕)
+    if (mobileMenuIcon.classList.contains('fa-bars')) {
+        mobileMenuIcon.classList.replace('fa-bars', 'fa-times');
+    } else {
+        mobileMenuIcon.classList.replace('fa-times', 'fa-bars');
+    }
+}
+
+// Escuta o clique no botão hambúrguer
+mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+// Fecha o menu mobile automaticamente ao clicar em um link
+// Como usamos delegação de eventos no script principal, 
+// adicionamos essa lógica aqui para fechar o dropdown.
+document.addEventListener('click', (e) => {
+    const link = e.target.closest('#mobile-menu .nav-link');
+    if (link && mobileMenu.classList.contains('open')) {
+        toggleMobileMenu(); // Fecha o menu
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
