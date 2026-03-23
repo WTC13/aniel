@@ -33,3 +33,34 @@ O projeto foi desenvolvido utilizando as melhores práticas de front-end:
 ├── style.css       # Estilizações customizadas e animações
 ├── script.js       # Lógica de navegação, carrossel e menu mobile
 └── README.md       # Documentação do projeto (este arquivo)
+```
+
+## ⚙️ Como Executar o Projeto
+
+1. Faça o download dos arquivos do projeto.
+2. Certifique-se de estar conectado à internet (necessário para carregar as bibliotecas via CDN).
+3. Abra o arquivo index.html em qualquer navegador moderno.
+
+## Navegação (SPA)
+A troca de seções é controlada pelo atributo data-target presente nos elementos com a classe .nav-link. O script.js intercepta o clique, oculta todas as seções com a classe .content-section e exibe apenas a seção cujo id corresponde ao data-target.
+
+## Carrossel Dinâmico
+Os dados do carrossel estão centralizados no objeto dadosCarrossel dentro do script.js. Para adicionar ou remover slides, basta alterar este objeto:
+
+```
+const dadosCarrossel = {
+    slides: [
+        { tag: "Nova Tag", titulo: "Novo Título", ... }
+    ]
+};
+```
+
+##Menu Mobile
+O menu mobile utiliza uma lógica de toggle de classes CSS. A animação de "slide down" é controlada pela propriedade max-height no style.css para garantir performance.
+
+##📝 Licença
+Este projeto foi desenvolvido para fins institucionais. Sinta-se à vontade para utilizá-lo e adaptá-lo conforme a necessidade da associação.
+
+Desenvolvido com ❤️ por **WTC**
+
+
